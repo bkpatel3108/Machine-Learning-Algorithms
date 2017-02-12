@@ -1,0 +1,69 @@
+You need to run following python file to test gradient descent for least squares
+machine learning algorithm
+1. GradientDescentForLeastSquaresImplWithDecimal.py <<data_file>> <<training_labels_file>> 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. GradientDescentForLeastSquaresImplWithDecimal.py
+Run following command for training using 'training data sets' 
+and predicting labels for 'unknown data sets'
+
+Predicated labels will be saved in predlabels.txt file in same directory 
+as GradientDescentForLeastSquaresImplWithDecimal.py
+
+
+> python3 GradientDescentForLeastSquaresImplWithDecimal.py data.txt trainlabels.txt
+
+Output:
+Initial w [Decimal('0.00593225630736156882283349744966471916995942592620849609375'), Decimal('-0.0058689580550652341306427928202538168989121913909912109375'), Decimal('0.00939077674509142083791868316211548517458140850067138671875')]
+error = 4.508691906286708670168410087
+error = 4.435260254002344969414794376
+error = 4.403070946518013092615427755
+error = 4.371602902483589913519610729
+error = 4.340367642613391407225280209
+error = 4.309357681881968123273503032
+.......
+error = 3.190313370975050286139295836
+error = 3.167596119000681412104842824
+error = 3.145042674438322275499000429
+error = 3.122651856116233033462697389
+error = 3.100422491379808497425172870
+error = 3.078353416030163124784325538
+error = 3.056443474263158859735181828
+error = 3.034691518608872629964455658
+error = 3.013096409871500328955189198
+.......
+error = 2.036806951863124634658365907
+error = 2.022407287474329674217110146
+error = 2.008111454612258260074135787
+.......
+error = 1.430507922626485558239495913
+error = 1.420480089251926053751174791
+error = 1.410524563342514418454603039
+error = 1.400640823509472989216100603
+.......
+error = 0.2091079743951233437777707150
+error = 0.2078872139231930813349918090
+error = 0.2066752557819024855439125426
+error = 0.2054720365008364777484939556
+.......
+error = 0.1800705668957698272240085785
+error = 0.1790591812569873450809723067
+error = 0.1780550882239469028026644376
+error = 0.1770582352123973391708422752
+w = [Decimal('0.09205931715007126069379563702'), Decimal('0.08755408620617247364921892301'), Decimal('-0.9000854085184065459641956147')]
+||w|| = 0.1270458023137139528059513048
+Distance to origin = 7.084731585982096406117973768
+Predicted labels :
+0 8
+1 9
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Extra:
+
+2. BalancedError.py
+Run following command to check Balanced Error of predicted labels
+
+> python3 BalancedError.py labels.txt predlabels.txt
+
+Output:
+0.0
